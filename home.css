@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    background-color:rgb(211, 231, 180) ;
+}
+
+.header{
+width: 1280px;
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+/*Kode CSS Navigator*/
+ul{
+    list-style:none;
+    background: #e0c9fb;
+    margin-top: -4px;
+    position:absolute;
+    width: 1290px;
+    height: 60px;
+} 
+
+ul li{
+    display: inline-block ;
+    position: relative;
+    height: 60px;
+    padding: 10px 8px;
+}
+
+ul li a{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+ul a:hover{
+    background-color: #acefbc;
+}
+
+/* Kode css dropdown */
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    background:#b595db;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 0px 0px;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.h1{
+    margin-top: 70px;
+    font-family: "Magic";
+    font-size: large;
+}
+
+.p1{
+    margin-top: 5px;
+    font-family: "NerkoOne-Regular";
+    background-color: #93d1a1;
+}
+
+.p4{
+    margin-top: 10px;
+    font-family: "NerkoOne-Regular";
+    background-color: #aae486;
+}
+
+.oo{
+    margin-top: 5px;
+} 
+
+.ii{
+    margin-top: 5px;
+} 
+
+@font-face{
+    font-family:"Magic";
+    src: url(Magic\ Retro.ttf);
+}
+
+@font-face{
+    font-family:"NerkoOne-Regular";
+    src: url(NerkoOne-Regular.ttf);
+}
+
+@font-face{
+    font-family:"Juni";
+    src: url(JunigardenSerif_PERSONAL_USE_ONLY.otf);
+}
+
+.typing-effect {
+    margin-top: 60px;
+    font-size: 1.5em;
+    font-family: "Juni";
+    overflow: hidden; /* Memastikan teks di luar area tersembunyi */
+    border-right: .15em solid #333; /* Efek kursor */
+    white-space: nowrap; /* Menjaga teks tetap di satu baris */
+    width: 0; /* Awal width */
+    animation: typing 4s steps(30, end) forwards, blink .5s step-end infinite alternate;
+  }
+
+  .typing-effect2 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-family: "Juni";
+    overflow: hidden; /* Memastikan teks di luar area tersembunyi */
+    border-right: .15em solid #333; /* Efek kursor */
+    white-space: nowrap; /* Menjaga teks tetap di satu baris */
+    width: 0; /* Awal width */
+    animation: typing 4s steps(30, end) forwards, blink .5s step-end infinite alternate;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%; /* Lebar penuh teks */
+    }
+  }
+
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: black;
+    }
+  }
